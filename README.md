@@ -15,10 +15,12 @@
 * Crie uma nova pasta, abra-a e execute o comando a seguir para criar um novo repositório
     ```
         git init
+   
 ## Obtenha um repositório
 * Crie uma cópia de trabalho em um repositório local executando o comando:
     ```
         git clone /caminho/para/o/repositório
+
 * Quando usar um servidor remoto, seu comando será
     ```
         git clone usuário@servidor:/caminho/para/o/repositório
