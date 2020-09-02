@@ -98,6 +98,31 @@ antes de fazer o merge das alterações, você pode também pré-visualizá-as u
 git diff <branch origem> <branch destino>
 ```
 
+## Mesclar com um repositório protegido (merge request)
+<br>
+
+Para enviar as alterações de uma branch de desenvolvimento (ex: dev) para uma branch protegida, você precisa criar um merge request. Veja a seguir:
+
+1. Navegue até o repositório desejado e clique em **create merge request**
+![merge1](merge-request-1.png)
+
+2. Preencha os campos corretamente e observe os detalhes do merge realizado
+
+    - **1** contém a branch de origem e a branch de destino do merge. Neste caso, estamos fazendo merge da branch **dev** para a branch **master**.
+    - **2** campo para colocar uma breve descrição sobre o merge. 
+    
+    - **Seta vermelha** desmarque a opção **delete source branch when merge request is accepted.** para desabilitar a deleção da branch de origem (dev, no nosso caso).
+
+    - **Assignee**: neste campo você seleciona quem irá revisar o seu merge request (recomendo colocar pelo menos duas pessoas do time). 
+
+    ![merge2](merge-request-2.png)
+
+3. Após isso, clique em **submit merge request** ao final da página e pronto! Agora é só aguardar pela revisão do merge. Veja a seguir:
+
+    ![merge3](merge-request-3.png)
+
+<br>
+
 ## Sobrescrevendo alterações locais
 No caso de você ter feito algo errado, é possível sobrescrever as alterações locais usando o commando
 ```
